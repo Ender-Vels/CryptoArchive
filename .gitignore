@@ -1,0 +1,46 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+
+# CMake build trees and generated files
+build/
+build-*/
+out/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+*.cmake.user
+
+# Compiled output
+*.obj
+*.o
+*.lib
+*.exp
+*.pdb
+*.ilk
+*.exe
+*.dll
+
+# Qt generated files
+*_autogen/
+qrc_*.cpp
+ui_*.h
+moc_*.cpp
+
+# Local runtime and temporary files
+*.cryptsh
+*.cshpub
+*.tmp
+*.temp
+*.log
+
+# IDE and OS files
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini
+

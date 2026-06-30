@@ -1,0 +1,33 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "vs2026-x64-vcpkg",
+      "displayName": "Visual Studio 2026 x64 + Qt6 + vcpkg",
+      "generator": "Visual Studio 18 2026",
+      "architecture": "x64",
+      "binaryDir": "${sourceDir}/build-vcpkg",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "D:/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "VCPKG_TARGET_TRIPLET": "x64-windows",
+        "CMAKE_PREFIX_PATH": "D:/Qt/6.11.0/msvc2022_64",
+        "OPENSSL_ROOT_DIR": "D:/vcpkg/installed/x64-windows",
+        "ZLIB_ROOT": "D:/vcpkg/installed/x64-windows"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "vs2026-x64-vcpkg-release",
+      "displayName": "Release",
+      "configurePreset": "vs2026-x64-vcpkg",
+      "configuration": "Release"
+    },
+    {
+      "name": "vs2026-x64-vcpkg-debug",
+      "displayName": "Debug",
+      "configurePreset": "vs2026-x64-vcpkg",
+      "configuration": "Debug"
+    }
+  ]
+}
